@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* container
+box
+leftbox
+contentBox
+views
+comments
+users
+views
+rightbox */
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aqua;
+}
+
+.box{
+    width: 1000px;
+    height: 500px;
+    background: white;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #4e094c;
+}
+
+#heading{
+    font-size: 45px;
+    text-align: start;
+}
+
+.leftbox{
+    width: 50%;
+    margin:auto;
+    /* margin-right:25px; */
+    margin-left: 40px;
+    margin-left: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: white;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.contentBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+.comments{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.users{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.views{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.footerSection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightbox{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.rightbox img{
+    width: 100%;
+    height: 100%;
+}
+
+#comCount{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#textCom{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#userCount{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#usersVisit{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#viewsCount{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#viewers{
+    font-size: 15px;
+    font-weight: bold;
+}
