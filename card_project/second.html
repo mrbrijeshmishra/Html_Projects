@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            width: 300px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            border-radius: 20px;
+            gap: 20px;
+        }
+
+        .content{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+            width: 90%;
+        }
+
+        .box img{
+            width: 300px;
+            height: 150px;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+
+        .item{
+            display: flex;
+            width: 90%;
+            border-radius: 20px;
+            background-color: aqua;
+            /* justify-content: space-around;
+            align-items: center; */
+        }
+
+        .leftbox{
+            width: fit-content;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .music{
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 10px;
+        }
+
+        .plan{
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        .rightbox{
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .item img{
+            height: 40px;
+            width: 40px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        #payment{
+            width: 90%;
+            height: 2.7rem;
+            font-size: 20px;
+            color: white;
+            background-color: rgb(37, 37, 136);
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 5px 10px #888888;
+        }
+
+        #cancel{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="images/icon.jpg" alt="">
+            <div class="content">
+                <h2>Order Summary</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, pariatur fuga. In porro, delectus quod vero voluptate sed?</p>
+            </div>
+            <div class="item"> 
+                <div class="leftbox">
+                    <div class="music">
+                        <img src="images/music.png" alt="">
+                    </div>
+                    <div id="plan">
+                        <p>Annual Plan</p>
+                        <p>&#8377;99.9/month</p>
+                    </div>
+                </div>
+                <div class="rightbox">
+                    <a href="#">Change</a>
+                </div>
+            </div>
+            <button id="payment">Proceed to Payment</button>
+            <div id="cancel">
+                <a href="#">Cancel Order</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
